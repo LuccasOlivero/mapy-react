@@ -7,7 +7,7 @@ function HomePage() {
       <PageNav />
       <h2>home</h2>
 
-      <NavLink to="/pricing">pricing</NavLink>
+      <NavLink to="/app">go to the app</NavLink>
     </div>
   );
 }
