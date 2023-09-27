@@ -1,0 +1,20 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Product from "./Pruduct";
+import Pricing from "./Pricing";
+import HomePage from "./HomePage";
+import PageNotFound from "./PageNotFound";
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />}></Route>
+        <Route path="product" element={<Product />}></Route>
+        <Route path="pricing" element={<Pricing />}></Route>
+        <Route path="*" element={<PageNotFound />}></Route>
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default App;
